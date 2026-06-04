@@ -4,6 +4,7 @@ const navItems = [
   ["match-centre", "Match Centre", "chart"],
   ["competitions", "Competitions", "users"],
   ["caf-champions-league", "CAF Champions League", "calendar"],
+  ["caf-final-champions-league", "CAF Final Report", "doc"],
   ["caf-confederation-cup", "CAF Confederation Cup", "pin"],
   ["afcon", "Africa Cup of Nations", "ball"],
   ["african-youth-football", "African Youth Football", "bolt"],
@@ -28,6 +29,8 @@ const topTabs = [
   ["competitions", "Competitions"],
   ["official-media-profile", "Media File"]
 ];
+
+const finalCoverageUrl = "https://www.deeplyafrica.com/caf-final-champions-league";
 
 const competitions = [
   {
@@ -373,6 +376,13 @@ function selectedCompetition(route) {
   return competitions.find(item => item.slug === route);
 }
 
+function currentRoute() {
+  const hash = (location.hash || "").replace("#", "");
+  if (hash) return hash;
+  const path = location.pathname.replace(/^\/+|\/+$/g, "");
+  return path || "home";
+}
+
 function routeShell(leftContent, rightContent = rightMediaCard("media") + notificationsCard()) {
   return `
     <div class="left-column">${leftContent}</div>
@@ -635,6 +645,7 @@ function renderCompetitionPage(route) {
       visualClass: "logo-hero"
     })}
     ${panel("Desk Sections", "What this hub actually follows.", `<div class="section-list">${comp.sections.map(section => `<article><h3>${esc(section)}</h3><p>${esc(sectionCopy(section))}</p></article>`).join("")}</div>`)}
+    ${route === "caf-champions-league" ? finalCoveragePanel() : ""}
     ${panel("Latest Stories", "Recent pieces from this desk.", `<div class="story-grid">${(related.length ? related : articles.slice(0, 3)).map(storyCard).join("")}</div>`)}
   `;
   const right = competitionProfileCard(comp) + notificationsCard();
@@ -642,6 +653,9 @@ function renderCompetitionPage(route) {
 }
 
 function competitionProfileCard(comp) {
+  const finalActions = comp.slug === "caf-champions-league" ? `
+      <a class="primary-action" href="/caf-final-champions-league" style="display:flex;align-items:center;justify-content:center;">Final Report</a>
+    ` : "";
   return `
     <div class="right-card">
       <div class="right-logo">
@@ -660,8 +674,86 @@ function competitionProfileCard(comp) {
         <div class="info-line"><span>Focus</span><strong>Players & clubs</strong></div>
       </div>
       <a class="primary-action" href="#news" style="display:flex;align-items:center;justify-content:center;">Open Related News</a>
+      ${finalActions}
     </div>
   `;
+}
+
+function finalCoveragePanel() {
+  return panel("CAF Final Coverage", "Direct access to the dedicated final article.", `
+    <div class="final-feature">
+      <img src="public/articles/caf-final/asfar-mamelodi-rabat-wide.jpeg" alt="AS FAR vs Mamelodi Sundowns final atmosphere at Moulay Abdellah Stadium">
+      <div>
+        <div class="kicker">Final report</div>
+        <h3>AS FAR vs Mamelodi Sundowns: Rabat final file</h3>
+        <p>Mamelodi Sundowns held FAR Rabat 1-1 in the second leg at Moulay Abdellah Stadium and won the tie 2-1 on aggregate, with Teboho Mokoena's first-half stoppage-time equaliser and Ronwen Williams' penalty save shaping the decisive moments.</p>
+        <div class="final-actions">
+          <a class="primary-action" href="/caf-final-champions-league">Read full article</a>
+          <a class="primary-action secondary-action" href="${finalCoverageUrl}">More details</a>
+        </div>
+      </div>
+    </div>
+  `);
+}
+
+function renderFinalChampionsLeague() {
+  const left = `
+    <section class="article-hero">
+      <img src="public/articles/caf-final/asfar-road-to-final.png" alt="AS FAR road to the CAF Champions League final visual">
+      <div class="article-hero-copy">
+        <div class="kicker">CAF Champions League Final</div>
+        <h1>AS FAR vs Mamelodi Sundowns: a Rabat final decided by pressure, precision and nerve</h1>
+        <p>Mamelodi Sundowns were crowned CAF Champions League winners after a 1-1 draw against FAR Rabat at Moulay Abdellah Stadium, completing a 2-1 aggregate victory after their 1-0 first-leg win in Pretoria.</p>
+        <div class="article-meta-strip">
+          <span>Rabat</span><span>24 May 2026</span><span>FAR Rabat 1-1 Mamelodi Sundowns</span><span>Sundowns win 2-1 agg.</span>
+        </div>
+      </div>
+    </section>
+    ${panel("Match Report", "The real story of the second leg.", `
+      <div class="article-body">
+        <p>The final returned to Rabat with AS FAR chasing a one-goal deficit and a stadium ready to push every duel, clearance and second ball toward the South African box. The Moroccan side began with intent, using the emotion of the occasion to increase territory and keep Sundowns under long spells of pressure.</p>
+        <p>The match opened fully in the 40th minute. After a VAR review, AS FAR were awarded a penalty for a challenge on Reda Slim. Mohamed Hrimat accepted the responsibility and converted with composure, making it 1-0 on the night and levelling the final at 1-1 on aggregate.</p>
+        <p>That moment could have shifted the tie completely, but Sundowns responded before half-time with the coldness of an experienced continental side. In first-half stoppage time, Brayan Leon's delivery found its way through the area, Tashreeq Matthews helped the ball into Teboho Mokoena's path, and Mokoena struck first time off the underside of the bar to make it 1-1.</p>
+        <p>The equaliser restored Sundowns' aggregate lead and changed the tone of the second half. AS FAR still had territory and belief, but the visitors now had the scoreline they needed. Their task became clear: protect central spaces, defend the box with discipline and slow the emotional rhythm of the home side.</p>
+        <p>The decisive second-half scene arrived in the 74th minute. AS FAR won another penalty after Ronwen Williams was judged to have fouled Youssef El Fahli. Hrimat stepped up again, but this time Williams read the moment and saved, denying the hosts the goal that would have reopened the final.</p>
+        <p>From there, Sundowns survived the closing pressure and managed the final minutes with enough structure to protect the 2-1 aggregate advantage. Their title was built on the first-leg margin in Pretoria, Mokoena's timing in Rabat and Williams' defining save when the final was still alive.</p>
+      </div>
+    `)}
+    ${panel("Key Match Moments", "The actions that shaped the title.", `<div class="section-list">
+      <article><h3>40' - Hrimat penalty</h3><p>AS FAR levelled the tie after Mohamed Hrimat converted from the spot, turning the Rabat atmosphere into a direct force in the match.</p></article>
+      <article><h3>45+7' - Mokoena equaliser</h3><p>Teboho Mokoena's first-time finish restored Sundowns' aggregate advantage just before the interval and changed the psychological balance of the final.</p></article>
+      <article><h3>74' - Williams save</h3><p>Ronwen Williams stopped Hrimat's second penalty and produced the intervention that effectively protected Sundowns' path to the trophy.</p></article>
+      <article><h3>Full time</h3><p>The 1-1 draw in Rabat, combined with Sundowns' 1-0 first-leg win in Pretoria, sealed a 2-1 aggregate victory.</p></article>
+    </div>`)}
+    ${panel("Analysis", "Why Sundowns survived Rabat.", `
+      <div class="article-body">
+        <p>AS FAR's best route came from pressure and volume: balls into the area, second actions around the box and the ability to make Sundowns defend with their backs to goal. The home side gave the final the intensity it needed, but the difference was conversion at the most important moments.</p>
+        <p>Sundowns did not need to control every phase to control the tie. Their advantage came from defensive organisation, patience after losing territory and the quality to punish one loose moment before half-time. Mokoena's equaliser gave them the scoreboard position that shaped the rest of the night.</p>
+        <p>The final also underlined the weight of elite goalkeeping in knockout football. Williams' penalty save was not only a technical action; it was a tactical reset. It removed AS FAR's clearest second-half route back into the tie and forced the hosts to chase again against a side already organised to defend the aggregate.</p>
+      </div>
+    `)}
+    ${panel("For More Details", "Direct link requested for the full final file.", `
+      <div class="link-list">
+        <a href="${finalCoverageUrl}">${finalCoverageUrl}</a>
+      </div>
+    `)}
+  `;
+  const right = `
+    <div class="right-card">
+      <div class="right-logo"><img src="public/competitions/caf-champions-league-logo.png" alt="CAF Champions League logo"></div>
+      <div class="right-card-title"><span>Match details</span><h3>Final second leg</h3><p>FAR Rabat 1-1 Mamelodi Sundowns. Sundowns win 2-1 on aggregate.</p></div>
+      <div class="option-group">
+        <span class="option-label">Key facts</span>
+        <div class="info-line"><span>Venue</span><strong>Moulay Abdellah Stadium</strong></div>
+        <div class="info-line"><span>Date</span><strong>24 May 2026</strong></div>
+        <div class="info-line"><span>Scorers</span><strong>Hrimat / Mokoena</strong></div>
+        <div class="info-line"><span>Outcome</span><strong>Sundowns champions</strong></div>
+      </div>
+      <a class="primary-action" href="${finalCoverageUrl}" style="display:flex;align-items:center;justify-content:center;">More details</a>
+    </div>
+    ${notificationsCard()}
+  `;
+  return routeShell(left, right);
 }
 
 function renderAfricanTalents() {
@@ -836,7 +928,7 @@ function renderContact() {
 }
 
 function renderRoute() {
-  const route = (location.hash || "#home").replace("#", "");
+  const route = currentRoute();
   setActive(route);
   const content = document.getElementById("contentBody");
 
@@ -844,6 +936,7 @@ function renderRoute() {
   else if (route === "news") content.innerHTML = renderNews();
   else if (route === "match-centre") content.innerHTML = renderMatchCentre();
   else if (route === "competitions") content.innerHTML = renderCompetitions();
+  else if (route === "caf-final-champions-league") content.innerHTML = renderFinalChampionsLeague();
   else if (selectedCompetition(route)) content.innerHTML = renderCompetitionPage(route);
   else if (route === "african-talents") content.innerHTML = renderAfricanTalents();
   else if (route === "football-intelligence") content.innerHTML = renderFootballIntelligence();
