@@ -1,0 +1,38 @@
+{
+  "mediaOutlet": "DeeplyAfrica",
+  "type": "Digital Sports Media Platform",
+  "country": "Morocco",
+  "focus": "African Football",
+  "representative": "Anas SENHAJI",
+  "role": "Founder & Sport Media Manager",
+  "languages": ["English", "French", "Arabic"],
+  "coverage": [
+    "CAF Champions League",
+    "CAF Confederation Cup",
+    "Africa Cup of Nations",
+    "AFCON U-17 / U-20 / U-23",
+    "WAFCON",
+    "CAF Women's Champions League",
+    "FIFA Competitions involving African teams",
+    "Botola Pro Morocco",
+    "African Clubs",
+    "African Talents"
+  ],
+  "formats": [
+    "Original articles",
+    "Match reports",
+    "Match previews",
+    "Tactical analysis",
+    "Player profiles",
+    "Interviews",
+    "Visual storytelling",
+    "Social media coverage"
+  ],
+  "emails": {
+    "general": "contact@deeplyafrica.com",
+    "media": "media@deeplyafrica.com",
+    "editorial": "editorial@deeplyafrica.com",
+    "partnerships": "partnerships@deeplyafrica.com"
+  },
+  "website": "https://www.deeplyafrica.com"
+}

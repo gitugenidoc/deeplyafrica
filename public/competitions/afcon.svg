@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Africa Cup of Nations">
+  <rect width="640" height="360" fill="#080a0f"/>
+  <path d="M70 300 320 56l250 244Z" fill="#8c5cff" opacity=".45"/>
+  <circle cx="320" cy="168" r="72" fill="#25d37d"/>
+  <path d="M270 168h100M320 118v100" stroke="#080a0f" stroke-width="10" stroke-linecap="round"/>
+  <text x="40" y="72" fill="#f6f7fb" font-family="Arial" font-size="34" font-weight="800">Africa Cup of Nations</text>
+  <text x="42" y="112" fill="#aeb6c7" font-family="Arial" font-size="18">National teams, identity and history</text>
+</svg>

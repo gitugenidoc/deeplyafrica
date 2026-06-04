@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="WAFCON">
+  <rect width="640" height="360" fill="#080a0f"/>
+  <rect x="70" y="120" width="500" height="170" rx="18" fill="#171b25"/>
+  <circle cx="190" cy="205" r="54" fill="#f4c542"/>
+  <circle cx="320" cy="205" r="54" fill="#25d37d"/>
+  <circle cx="450" cy="205" r="54" fill="#8c5cff"/>
+  <text x="40" y="72" fill="#f6f7fb" font-family="Arial" font-size="34" font-weight="800">WAFCON</text>
+  <text x="42" y="112" fill="#aeb6c7" font-family="Arial" font-size="18">African women's football coverage</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="DeeplyAfrica icon">
+  <defs>
+    <linearGradient id="g" x1="14" y1="10" x2="84" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25d37d"/>
+      <stop offset=".52" stop-color="#f4c542"/>
+      <stop offset="1" stop-color="#8c5cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="20" fill="#080a0f"/>
+  <path d="M48 12c20 0 36 16 36 36S68 84 48 84 12 68 12 48 28 12 48 12Z" fill="url(#g)"/>
+  <path d="M31 62V34h18c10 0 17 5 17 14s-7 14-17 14H31Zm11-9h7c4 0 6-2 6-5s-2-5-6-5h-7v10Z" fill="#07080d"/>
+  <path d="M31 70h34" stroke="#07080d" stroke-width="7" stroke-linecap="round"/>
+</svg>

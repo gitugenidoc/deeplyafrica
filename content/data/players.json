@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Youssef Rahimi",
+    "age": 19,
+    "nationality": "Morocco",
+    "club": "AS FAR",
+    "position": "Central midfielder",
+    "strongFoot": "Right",
+    "strengths": "Press resistance, line-breaking passes",
+    "playingStyle": "Tempo controller",
+    "tacticalRole": "Build-up connector",
+    "potential": "High",
+    "deeplyAfricaNote": "Profile tracked for technical growth, role clarity and next-step readiness."
+  },
+  {
+    "name": "Awa Diarra",
+    "age": 20,
+    "nationality": "Mali",
+    "club": "AS Mande",
+    "position": "Forward",
+    "strongFoot": "Right",
+    "strengths": "Acceleration, box movement",
+    "playingStyle": "Direct wide forward",
+    "tacticalRole": "Final-third runner",
+    "potential": "High",
+    "deeplyAfricaNote": "Profile tracked for continental visibility and women's football development."
+  }
+]

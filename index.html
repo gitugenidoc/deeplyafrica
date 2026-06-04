@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeeplyAfrica Platform</title>
+    <meta
+      name="description"
+      content="DeeplyAfrica is a Morocco-based digital sports media platform covering African football competitions, clubs, national teams and FIFA tournaments involving African teams."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- BEGIN: Main App Container -->
+    <div class="dashboard-frame">
+      <!-- BEGIN: Sidebar -->
+      <aside class="side-nav" aria-label="DeeplyAfrica navigation">
+        <div class="side-nav-main">
+          <!-- Logo placeholder -->
+          <a class="logo-tile" href="#home" aria-label="DeeplyAfrica home">
+            <img src="public/logo/deeplyafrica-real.png" alt="">
+          </a>
+
+          <!-- Navigation Icons -->
+          <nav class="icon-nav" id="sidebarNav"></nav>
+        </div>
+
+        <!-- Settings Icon -->
+        <a class="settings-button" href="#official-media-profile" aria-label="Official Media Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Zm8.2-3.5c0-.5-.1-1-.2-1.5l2-1.5-2-3.5-2.4 1a8 8 0 0 0-2.6-1.5L14.6 2h-5.2L9 4.5A8 8 0 0 0 6.4 6L4 5 2 8.5l2 1.5a8.3 8.3 0 0 0 0 3l-2 1.5L4 18l2.4-1a8 8 0 0 0 2.6 1.5l.4 2.5h5.2l.4-2.5a8 8 0 0 0 2.6-1.5l2.4 1 2-3.5-2-1.5c.1-.5.2-1 .2-1.5Z"/>
+          </svg>
+        </a>
+      </aside>
+      <!-- END: Sidebar -->
+
+      <!-- BEGIN: Main Content Area -->
+      <main class="main-area">
+        <!-- BEGIN: Header -->
+        <header class="top-header">
+          <!-- Top Navigation Tabs -->
+          <nav class="top-tabs" id="topTabs" aria-label="Dashboard sections">
+            <a class="top-tab active" href="#home">Overview</a>
+            <a class="top-tab" href="#news">Newsroom</a>
+            <a class="top-tab" href="#match-centre">Match Centre</a>
+            <a class="top-tab" href="#competitions">Competitions</a>
+            <a class="top-tab" href="#official-media-profile">Media File</a>
+          </nav>
+
+          <!-- User Profile & Notifications -->
+          <div class="header-profile">
+            <a class="notification-bell" href="#news" aria-label="News notifications">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 0 0-4-5.7V5a2 2 0 1 0-4 0v.3A6 6 0 0 0 6 11v3.2a2 2 0 0 1-.6 1.4L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9"/>
+              </svg>
+              <span></span>
+            </a>
+            <a class="profile-chip" href="#editorial-team">
+              <img src="public/logo/deeplyafrica-real.png" alt="">
+              <span>
+                <strong>Anas SENHAJI</strong>
+                <small>Founder & Sport Media Manager</small>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </a>
+          </div>
+        </header>
+        <!-- END: Header -->
+
+        <!-- BEGIN: Content Body -->
+        <div class="content-body" id="contentBody"></div>
+        <!-- END: Content Body -->
+      </main>
+      <!-- END: Main Content Area -->
+    </div>
+    <!-- END: Main App Container -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

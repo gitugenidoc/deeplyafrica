@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 72" role="img" aria-label="DeeplyAfrica">
+  <rect width="310" height="72" rx="14" fill="#080a0f"/>
+  <circle cx="38" cy="36" r="22" fill="#25d37d"/>
+  <path d="M25 47V25h14c8 0 13 4 13 11s-5 11-13 11H25Zm9-7h5c3 0 5-1 5-4s-2-4-5-4h-5v8Z" fill="#080a0f"/>
+  <text x="74" y="33" fill="#f6f7fb" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">DeeplyAfrica</text>
+  <text x="75" y="53" fill="#aeb6c7" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">African football intelligence</text>
+</svg>

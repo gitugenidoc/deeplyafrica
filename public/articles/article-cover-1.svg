@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="DeeplyAfrica article cover">
+  <rect width="640" height="360" fill="#080a0f"/>
+  <path d="M0 250h640v110H0z" fill="#10131a"/>
+  <circle cx="470" cy="160" r="98" fill="#25d37d" opacity=".65"/>
+  <path d="M90 270c120-80 300-80 460 0" fill="none" stroke="#f4c542" stroke-width="12" stroke-linecap="round"/>
+  <text x="42" y="70" fill="#f6f7fb" font-family="Arial" font-size="34" font-weight="800">Original Article</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="DeeplyAfrica player profile cover">
+  <rect width="640" height="360" fill="#080a0f"/>
+  <circle cx="220" cy="182" r="92" fill="#f4c542"/>
+  <circle cx="420" cy="182" r="92" fill="#8c5cff" opacity=".8"/>
+  <path d="M220 132v100M170 182h100M420 132v100M370 182h100" stroke="#080a0f" stroke-width="12" stroke-linecap="round"/>
+  <text x="42" y="60" fill="#f6f7fb" font-family="Arial" font-size="34" font-weight="800">Player Watch</text>
+</svg>

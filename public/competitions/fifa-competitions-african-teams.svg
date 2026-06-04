@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="African Teams in FIFA Competitions">
+  <rect width="640" height="360" fill="#080a0f"/>
+  <circle cx="320" cy="190" r="118" fill="none" stroke="#41a4ff" stroke-width="8"/>
+  <circle cx="320" cy="190" r="78" fill="none" stroke="#25d37d" stroke-width="8"/>
+  <circle cx="320" cy="190" r="38" fill="#f4c542"/>
+  <text x="40" y="72" fill="#f6f7fb" font-family="Arial" font-size="32" font-weight="800">African Teams in FIFA Competitions</text>
+  <text x="42" y="112" fill="#aeb6c7" font-family="Arial" font-size="18">All categories, one pathway</text>
+</svg>

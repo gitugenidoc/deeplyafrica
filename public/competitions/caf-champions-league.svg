@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="CAF Champions League">
+  <rect width="640" height="360" fill="#080a0f"/>
+  <path d="M0 260h640v100H0z" fill="#111a15"/>
+  <circle cx="320" cy="178" r="92" fill="none" stroke="#25d37d" stroke-width="5"/>
+  <path d="M120 270c95-70 305-70 400 0" fill="none" stroke="#f4c542" stroke-width="10" stroke-linecap="round"/>
+  <text x="40" y="72" fill="#f6f7fb" font-family="Arial" font-size="34" font-weight="800">CAF Champions League</text>
+  <text x="42" y="112" fill="#aeb6c7" font-family="Arial" font-size="18">DeeplyAfrica Intelligence Hub</text>
+</svg>

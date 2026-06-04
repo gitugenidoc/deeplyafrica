@@ -1,0 +1,58 @@
+[
+  {
+    "name": "CAF Champions League",
+    "slug": "caf-champions-league",
+    "type": "Club Competition",
+    "region": "Africa",
+    "description": "Africa's elite club competition covered through previews, reports, tactical analysis and club stories."
+  },
+  {
+    "name": "CAF Confederation Cup",
+    "slug": "caf-confederation-cup",
+    "type": "Club Competition",
+    "region": "Africa",
+    "description": "Coverage of Africa's second major club competition with focus on clubs, tactics and matchday stories."
+  },
+  {
+    "name": "Africa Cup of Nations",
+    "slug": "afcon",
+    "type": "National Teams",
+    "region": "Africa",
+    "description": "Deep coverage of African national teams, key players, fan culture and tournament stories."
+  },
+  {
+    "name": "African Youth Football",
+    "slug": "african-youth-football",
+    "type": "Youth Football",
+    "region": "Africa",
+    "description": "Coverage of U-17, U-20 and U-23 African competitions and youth teams in FIFA tournaments."
+  },
+  {
+    "name": "WAFCON",
+    "slug": "wafcon",
+    "type": "Women's National Teams",
+    "region": "Africa",
+    "description": "Coverage of African women's national teams, WAFCON stories and players."
+  },
+  {
+    "name": "CAF Women's Champions League",
+    "slug": "caf-womens-champions-league",
+    "type": "Women's Club Competition",
+    "region": "Africa",
+    "description": "Coverage of Africa's leading women's club competition."
+  },
+  {
+    "name": "African Teams in FIFA Competitions",
+    "slug": "fifa-competitions-african-teams",
+    "type": "FIFA Competitions",
+    "region": "Global",
+    "description": "Tracking African teams and clubs across FIFA tournaments in all categories."
+  },
+  {
+    "name": "Botola Pro Morocco",
+    "slug": "botola-pro-morocco",
+    "type": "Domestic League",
+    "region": "Morocco",
+    "description": "Moroccan football intelligence, club stories, matchday reports and talent watch."
+  }
+]

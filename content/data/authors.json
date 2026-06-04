@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Anas SENHAJI",
+    "slug": "anas-senhaji",
+    "role": "Founder & Sport Media Manager",
+    "bio": "Anas SENHAJI is the Founder and Sport Media Manager of DeeplyAfrica, a Morocco-based digital sports media platform focused on African football coverage, competition analysis, visual storytelling and media operations.",
+    "email": "media@deeplyafrica.com"
+  },
+  {
+    "name": "DeeplyAfrica Editorial Desk",
+    "slug": "deeplyafrica-editorial-desk",
+    "role": "Editorial Desk",
+    "bio": "The DeeplyAfrica Editorial Desk produces original coverage, match previews, football analysis and visual storytelling focused on African football.",
+    "email": "editorial@deeplyafrica.com"
+  },
+  {
+    "name": "Contributors Network",
+    "slug": "contributors-network",
+    "role": "Football Contributors and Match Analysts",
+    "bio": "DeeplyAfrica works with a growing network of football contributors, content producers and match analysts across Morocco and Africa.",
+    "email": "editorial@deeplyafrica.com"
+  }
+]

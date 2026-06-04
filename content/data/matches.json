@@ -1,0 +1,29 @@
+[
+  {
+    "competition": "CAF Champions League",
+    "date": "2026-06-03",
+    "homeTeam": "RS Berkane",
+    "scoreOrTime": "21:00",
+    "awayTeam": "Al Ahly",
+    "status": "Preview",
+    "reportOrPreview": "Read preview"
+  },
+  {
+    "competition": "Botola Pro",
+    "date": "2026-06-03",
+    "homeTeam": "Raja Casablanca",
+    "scoreOrTime": "2 - 1",
+    "awayTeam": "FUS Rabat",
+    "status": "FT",
+    "reportOrPreview": "Match report"
+  },
+  {
+    "competition": "WAFCON",
+    "date": "2026-06-04",
+    "homeTeam": "Morocco Women",
+    "scoreOrTime": "19:00",
+    "awayTeam": "Nigeria Women",
+    "status": "Upcoming",
+    "reportOrPreview": "Team guide"
+  }
+]

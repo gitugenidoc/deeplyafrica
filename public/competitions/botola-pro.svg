@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Botola Pro Morocco">
+  <rect width="640" height="360" fill="#080a0f"/>
+  <path d="M80 80h480v220H80z" fill="#122016" stroke="#25d37d" stroke-width="5"/>
+  <path d="M320 80v220M80 190h480" stroke="#f6f7fb" stroke-width="3" opacity=".45"/>
+  <circle cx="320" cy="190" r="62" fill="none" stroke="#f4c542" stroke-width="5"/>
+  <text x="40" y="55" fill="#f6f7fb" font-family="Arial" font-size="34" font-weight="800">Botola Pro Morocco</text>
+  <text x="42" y="335" fill="#aeb6c7" font-family="Arial" font-size="18">Domestic football intelligence</text>
+</svg>
